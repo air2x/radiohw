@@ -13,4 +13,14 @@
         class="ru.maxima.radio.EnergyRadio">
         <constructor-arg value="Tralala"/>
     </bean>
+
+    <bean id="radioList" class="ru.maxima.radio.RadioList">
+        <property name="songs">
+            <list>
+                <value>song1</value>
+                <value>song2</value>
+                <value>song3</value>
+            </list>
+        </property>
+    </bean>
 </beans>
