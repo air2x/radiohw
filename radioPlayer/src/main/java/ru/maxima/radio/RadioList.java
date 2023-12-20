@@ -3,20 +3,20 @@ package ru.maxima.radio;
 import java.util.List;
 
 public class RadioList {
-    List<String> songs;
+    List<RadioStation> radioStations;
 
     public RadioList() {
     }
 
-    public RadioList(List<String> songs) {
-        this.songs = songs;
+    public RadioList(List<RadioStation> songs) {
+        this.radioStations = songs;
     }
 
-    public List<String> getSongs() {
-        return songs;
+    public List<RadioStation> getRadioStations() {
+        return radioStations;
     }
 
-    public void setSongs(List<String> songs) {
-        this.songs = songs;
+    public void setRadioStations(List<RadioStation> radioStations) {
+        this.radioStations = radioStations;
     }
 }

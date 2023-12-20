@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/radiohw.iml" filepath="$PROJECT_DIR$/.idea/radiohw.iml" />
+      <module fileurl="file://$PROJECT_DIR$/radioPlayer/spring-application.iml" filepath="$PROJECT_DIR$/radioPlayer/spring-application.iml" />
     </modules>
   </component>
 </project>

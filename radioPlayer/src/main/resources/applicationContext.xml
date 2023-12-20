@@ -7,19 +7,64 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
 
+    <bean id="energy" class="ru.maxima.radio.RadioStation">
+        <property name="songs">
+            <list>
+                <value>DrumAndBass</value>
+                <value>Electro</value>
+                <value>Techno</value>
+            </list>
+        </property>
+    </bean>
 
-    <bean
-        id="energyRadio"
-        class="ru.maxima.radio.EnergyRadio">
-        <constructor-arg value="Tralala"/>
+    <bean id="news" class="ru.maxima.radio.RadioStation">
+        <property name="songs">
+            <list>
+                <value>Weather</value>
+                <value>News</value>
+                <value>Financial</value>
+            </list>
+        </property>
+    </bean>
+
+    <bean id="kids" class="ru.maxima.radio.RadioStation">
+        <property name="songs">
+            <list>
+                <value>Good night kids</value>
+                <value>Dance</value>
+                <value>From the cartoon</value>
+            </list>
+        </property>
+    </bean>
+
+    <bean id="retro" class="ru.maxima.radio.RadioStation">
+        <property name="songs">
+            <list>
+                <value>Strangers In The Night</value>
+                <value>House Of The Rising Sun</value>
+                <value>Good Morning Starshine</value>
+            </list>
+        </property>
+    </bean>
+
+    <bean id="classic" class="ru.maxima.radio.RadioStation">
+        <property name="songs">
+            <list>
+                <value>Antonio Lucho Vivaldi</value>
+                <value>Wolfgang Amadeus Mozart</value>
+                <value>Ludwig van Beethoven</value>
+            </list>
+        </property>
     </bean>
 
     <bean id="radioList" class="ru.maxima.radio.RadioList">
-        <property name="songs">
+        <property name="radioStations">
             <list>
-                <value>song1</value>
-                <value>song2</value>
-                <value>song3</value>
+                <ref bean="energy"/>
+                <ref bean="news"/>
+                <ref bean="kids"/>
+                <ref bean="retro"/>
+                <ref bean="classic"/>
             </list>
         </property>
     </bean>
